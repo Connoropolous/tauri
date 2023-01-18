@@ -59,7 +59,7 @@ pub fn entry_point(_attributes: TokenStream, item: TokenStream) -> TokenStream {
       #function
 
       fn _start_app() {
-        ::tauri::init_logging(#app_name_str);
+        // ::tauri::init_logging(#app_name_str);
         #[cfg(target_os = "android")]
         {
           use ::tauri::paste;
